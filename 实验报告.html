@@ -1,0 +1,1080 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="utf-8">
+<title>实验报告</title>
+
+
+<style type="text/css">
+body {
+  font-family: Helvetica, arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: white;
+  padding: 30px; }
+
+body > *:first-child {
+  margin-top: 0 !important; }
+body > *:last-child {
+  margin-bottom: 0 !important; }
+
+a {
+  color: #4183C4; }
+a.absent {
+  color: #cc0000; }
+a.anchor {
+  display: block;
+  padding-left: 30px;
+  margin-left: -30px;
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 20px 0 10px;
+  padding: 0;
+  font-weight: bold;
+  -webkit-font-smoothing: antialiased;
+  cursor: text;
+  position: relative; }
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA09pVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMy1jMDExIDY2LjE0NTY2MSwgMjAxMi8wMi8wNi0xNDo1NjoyNyAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNiAoMTMuMCAyMDEyMDMwNS5tLjQxNSAyMDEyLzAzLzA1OjIxOjAwOjAwKSAgKE1hY2ludG9zaCkiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OUM2NjlDQjI4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OUM2NjlDQjM4ODBGMTFFMTg1ODlEODNERDJBRjUwQTQiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo5QzY2OUNCMDg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo5QzY2OUNCMTg4MEYxMUUxODU4OUQ4M0REMkFGNTBBNCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PsQhXeAAAABfSURBVHjaYvz//z8DJYCRUgMYQAbAMBQIAvEqkBQWXI6sHqwHiwG70TTBxGaiWwjCTGgOUgJiF1J8wMRAIUA34B4Q76HUBelAfJYSA0CuMIEaRP8wGIkGMA54bgQIMACAmkXJi0hKJQAAAABJRU5ErkJggg==) no-repeat 10px center;
+  text-decoration: none; }
+
+h1 tt, h1 code {
+  font-size: inherit; }
+
+h2 tt, h2 code {
+  font-size: inherit; }
+
+h3 tt, h3 code {
+  font-size: inherit; }
+
+h4 tt, h4 code {
+  font-size: inherit; }
+
+h5 tt, h5 code {
+  font-size: inherit; }
+
+h6 tt, h6 code {
+  font-size: inherit; }
+
+h1 {
+  font-size: 28px;
+  color: black; }
+
+h2 {
+  font-size: 24px;
+  border-bottom: 1px solid #cccccc;
+  color: black; }
+
+h3 {
+  font-size: 18px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  color: #777777;
+  font-size: 14px; }
+
+p, blockquote, ul, ol, dl, li, table, pre {
+  margin: 15px 0; }
+
+hr {
+  background: transparent url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC) repeat-x 0 0;
+  border: 0 none;
+  color: #cccccc;
+  height: 4px;
+  padding: 0;
+}
+
+body > h2:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+body > h1:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+  body > h1:first-child + h2 {
+    margin-top: 0;
+    padding-top: 0; }
+body > h3:first-child, body > h4:first-child, body > h5:first-child, body > h6:first-child {
+  margin-top: 0;
+  padding-top: 0; }
+
+a:first-child h1, a:first-child h2, a:first-child h3, a:first-child h4, a:first-child h5, a:first-child h6 {
+  margin-top: 0;
+  padding-top: 0; }
+
+h1 p, h2 p, h3 p, h4 p, h5 p, h6 p {
+  margin-top: 0; }
+
+li p.first {
+  display: inline-block; }
+li {
+  margin: 0; }
+ul, ol {
+  padding-left: 30px; }
+
+ul :first-child, ol :first-child {
+  margin-top: 0; }
+
+dl {
+  padding: 0; }
+  dl dt {
+    font-size: 14px;
+    font-weight: bold;
+    font-style: italic;
+    padding: 0;
+    margin: 15px 0 5px; }
+    dl dt:first-child {
+      padding: 0; }
+    dl dt > :first-child {
+      margin-top: 0; }
+    dl dt > :last-child {
+      margin-bottom: 0; }
+  dl dd {
+    margin: 0 0 15px;
+    padding: 0 15px; }
+    dl dd > :first-child {
+      margin-top: 0; }
+    dl dd > :last-child {
+      margin-bottom: 0; }
+
+blockquote {
+  border-left: 4px solid #dddddd;
+  padding: 0 15px;
+  color: #777777; }
+  blockquote > :first-child {
+    margin-top: 0; }
+  blockquote > :last-child {
+    margin-bottom: 0; }
+
+table {
+  padding: 0;border-collapse: collapse; }
+  table tr {
+    border-top: 1px solid #cccccc;
+    background-color: white;
+    margin: 0;
+    padding: 0; }
+    table tr:nth-child(2n) {
+      background-color: #f8f8f8; }
+    table tr th {
+      font-weight: bold;
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr td {
+      border: 1px solid #cccccc;
+      margin: 0;
+      padding: 6px 13px; }
+    table tr th :first-child, table tr td :first-child {
+      margin-top: 0; }
+    table tr th :last-child, table tr td :last-child {
+      margin-bottom: 0; }
+
+img {
+  max-width: 100%; }
+
+span.frame {
+  display: block;
+  overflow: hidden; }
+  span.frame > span {
+    border: 1px solid #dddddd;
+    display: block;
+    float: left;
+    overflow: hidden;
+    margin: 13px 0 0;
+    padding: 7px;
+    width: auto; }
+  span.frame span img {
+    display: block;
+    float: left; }
+  span.frame span span {
+    clear: both;
+    color: #333333;
+    display: block;
+    padding: 5px 0 0; }
+span.align-center {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-center > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: center; }
+  span.align-center span img {
+    margin: 0 auto;
+    text-align: center; }
+span.align-right {
+  display: block;
+  overflow: hidden;
+  clear: both; }
+  span.align-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px 0 0;
+    text-align: right; }
+  span.align-right span img {
+    margin: 0;
+    text-align: right; }
+span.float-left {
+  display: block;
+  margin-right: 13px;
+  overflow: hidden;
+  float: left; }
+  span.float-left span {
+    margin: 13px 0 0; }
+span.float-right {
+  display: block;
+  margin-left: 13px;
+  overflow: hidden;
+  float: right; }
+  span.float-right > span {
+    display: block;
+    overflow: hidden;
+    margin: 13px auto 0;
+    text-align: right; }
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #eaeaea;
+  background-color: #f8f8f8;
+  border-radius: 3px; }
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent; }
+
+.highlight pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+
+pre {
+  background-color: #f8f8f8;
+  border: 1px solid #cccccc;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px; }
+  pre code, pre tt {
+    background-color: transparent;
+    border: none; }
+
+sup {
+    font-size: 0.83em;
+    vertical-align: super;
+    line-height: 0;
+}
+* {
+	-webkit-print-color-adjust: exact;
+}
+@media screen and (min-width: 914px) {
+    body {
+        width: 854px;
+        margin:0 auto;
+    }
+}
+@media print {
+	table, pre {
+		page-break-inside: avoid;
+	}
+	pre {
+		word-wrap: break-word;
+	}
+}
+</style>
+
+<style type="text/css">
+/**
+ * prism.js default theme for JavaScript, CSS and HTML
+ * Based on dabblet (http://dabblet.com)
+ * @author Lea Verou
+ */
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: black;
+	background: none;
+	text-shadow: 0 1px white;
+	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	word-wrap: normal;
+	line-height: 1.5;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
+}
+
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	text-shadow: none;
+	background: #b3d4fc;
+}
+
+@media print {
+	code[class*="language-"],
+	pre[class*="language-"] {
+		text-shadow: none;
+	}
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+	background: #f5f2f0;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .1em;
+	border-radius: .3em;
+	white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: slategray;
+}
+
+.token.punctuation {
+	color: #999;
+}
+
+.namespace {
+	opacity: .7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+	color: #905;
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+	color: #690;
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+	color: #a67f59;
+	background: hsla(0, 0%, 100%, .5);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+	color: #07a;
+}
+
+.token.function {
+	color: #DD4A68;
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+.token.italic {
+	font-style: italic;
+}
+
+.token.entity {
+	cursor: help;
+}
+</style>
+
+
+</head>
+
+<body>
+
+<h1 id="toc_0">2013011363 计34 黄予</h1>
+
+<h1 id="toc_1">实验描述</h1>
+
+<p>实验要求实现以下功能：</p>
+
+<h2 id="toc_2">多域搜索</h2>
+
+<p>检索时需要在多个方面限制检索结果：</p>
+
+<ul>
+<li>题名</li>
+<li>作者</li>
+<li>出版单位</li>
+<li>时间范围</li>
+</ul>
+
+<h2 id="toc_3">bool检索</h2>
+
+<ul>
+<li>AND</li>
+<li>OR</li>
+</ul>
+
+<h2 id="toc_4">同义词检索</h2>
+
+<p>借助word2vec，希望检索<code>计算机</code>时能够出现<code>电脑</code>的检索结果。</p>
+
+<h1 id="toc_5">实现方法</h1>
+
+<h2 id="toc_6">多域搜索</h2>
+
+<ul>
+<li><p>将输入分为主搜索框（<code>input query</code>）与限定搜索框(<code>题名</code>、<code>作者</code>、<code>出版单位</code>、<code>时间范围</code>)。</p></li>
+<li><p>构建<code>BooleanQuery</code>时，将非空的限定搜索框所对应的域的查询属性设为<code>BooleanClause.Occur.MUST</code>，查询词为限定搜索框中填写的内容；其余域（<code>摘要</code>、<code>关键词</code>、<code>文件名</code>等等）的查询属性设为<code>BooleanClause.Occur.SHOULD</code>，查询词为主搜索框中填写的内容。</p></li>
+</ul>
+
+<h3 id="toc_7">字符串搜索</h3>
+
+<p>通过<code>QueryParser</code>产生<code>Query</code></p>
+
+<h3 id="toc_8">数字范围搜索</h3>
+
+<ul>
+<li><p>建立索引时，对于<code>年</code>、<code>期</code>、<code>被引年</code>等仅有数字的域，使用<code>IntPoint</code>构建，其他域则使用<code>TextField</code>构建；</p></li>
+<li><p>查询时，通过<code>IntPoint.newRangeQuery</code>产生<code>Query</code></p></li>
+</ul>
+
+<h2 id="toc_9">bool检索</h2>
+
+<p><code>QueryParser</code>自带支持AND、OR、NOT表达式，因此直接用就可以。</p>
+
+<h2 id="toc_10">同义词检索</h2>
+
+<h3 id="toc_11">引入word2vec</h3>
+
+<p>使用开源代码<code>Word2VEC</code>（作者：ansj）导入word2vec的model，并使用其提供的函数<code>distance</code>获得Top N距离最近的词的函数<code>distance</code>，获得的近义词数目设为3。</p>
+
+<h3 id="toc_12">实现同义词分词器</h3>
+
+<h4 id="toc_13">实现SynonymFilter</h4>
+
+<p>在处理token的时候，调用Word2VEC查询距离该token最近的3个词，在token列表中加入同义词。</p>
+
+<h4 id="toc_14">实现SynonymsAnsjAnalyzer</h4>
+
+<p>代码大部分拷贝自<code>AnsjAnalyzer</code>，在<code>createComponents</code>函数处引入同义词过滤器<code>SynonymFilter</code>。</p>
+
+<h3 id="toc_15">流程</h3>
+
+<p>若用户开启了同义词检索功能（通过<code>-w</code>选项）：</p>
+
+<ul>
+<li>索引时使用用户指定的Analyzer，例如<code>AnsjAnalyzer</code>、<code>StandardAnalyzer</code>等</li>
+<li>查询时使用的Analyzer为<code>SynonymsAnsjAnalyzer</code></li>
+</ul>
+
+<p>若用户未开启同义词检索功能：</p>
+
+<ul>
+<li>索引与查询均使用用户指定的Analyzer</li>
+</ul>
+
+<p>简而言之，仅在查询时引入同义词，建立索引时不引入同义词。</p>
+
+<h1 id="toc_16">实验结果</h1>
+
+<h2 id="toc_17">多域搜索</h2>
+
+<p>直接检索<code>计算机</code>，搜索结果为：</p>
+
+<div><pre><code class="language-none">input query: 计算机
+题名:
+作者:
+出版单位:
+年(起始年份 结束年份):
+10 results:
+题名: 并行处理与并行计算机
+作者: 梁兴琦,欧阳一鸣
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 并行处理，并行计算机，操作系统
+摘要: 阐述了并行计算机的结构和原理，分析了并行处理的主要技术，指出了开发并行处理技术和并行计算机的重要性。
+专题名称: 各种电子数字计算机;
+分类名称: 并行计算机;
+出版日期: 1999-03-20
+
+题名: 计算机仿真技术在水资源与环境问题上的应用
+作者: 王美琴
+出版单位: 安徽农业科学
+关键词: 水资源;;环境保护;;计算机仿真
+摘要: 应用计算机仿真方法 ,把水资源与社会、经济、人口和环境放在一个大系统中 ,综合研究复杂系统的定量特性 ,分 3个子模块构造了水资源与环境问题的计算机仿真模型 ,探讨水资源与环境的关系
+专题名称: 计算机仿真;
+分类名称: 计算机仿真;
+出版日期: 2004-08-25
+
+题名: 太阳能计算机
+作者: 陈梦秋
+出版单位: 中外技术情报
+摘要: &lt;正&gt; 近年来,个人计算机的应用日趋广泛。笔记本计算机因便于携带而被商界普遍接受。笔记本计算机必须装配蓄电池,以便在无交流电源场合用机。然而,蓄电池使用时间有限,需经常
+专题名称: 其他计算机;
+分类名称: 其他计算机;
+出版日期: 1996-01-15
+
+题名: 农业院校非计算机专业计算机基础教学改革研究与实践
+作者: 张武;陈鸣;朱诚;
+出版单位: 安徽农业大学学报(社会科学版)
+关键词: 计算机基础;;课程体系;;层次教学;;教学方法
+摘要: 分析了目前农业院校非计算机专业计算机基础课程教学中普遍存在的一些问题,如学生基础差异较大、课程设置与专业结合不紧密、教学方法陈旧、理论课程与实验课相互脱节等,从以下几个方面介绍了安徽农业大学计算机基础教学改革实践:课程体系建设;个性化与差异化教学;改革课程的教学模式及方法;教材建设;改革课程的考核方式;开放教学资源,提高学生自学能力。计算机基础教学改革取得了良好的效果,为培养既精通专业知识,又掌握计算机应用技能的复合型人才奠定了基础。
+专题名称: 总论;
+出版日期: 2011-03-25
+
+题名: 一个面向计算机基础CAI的软件研究
+作者: 黄晓梅，张霖
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 计算机辅助教学，个别化教学模式，软件重用技术
+摘要: 给出了一个面向计算机基础教学的软件设计思想及教学流程、系统结构及各功能模块的设计方法。
+专题名称: 机器辅助技术;
+分类名称: 机器辅助设计（CAD）、辅助制图;
+出版日期: 1996-12-20
+
+题名: 谈计算机技术与建筑的关系
+作者: 林晨;
+出版单位: 安徽建筑
+关键词: 建筑画;;计算机辅助设计;;建筑节能
+摘要: 从建筑画的发展谈起,阐述了计算机辅助建筑设计的发展及其在建筑画表达方面的巨大影响和不足之处。并结合全球能源紧缺的现实,论述了计算机技术在建筑能耗模拟和工况运行监测等新领域的应用情况。
+专题名称: 计算机在工业技术领域的应用;其他科学技术在建筑中的应用;
+分类名称: 电子计算机在建筑中的应用;
+出版日期: 2009-09-10
+
+题名: 计算机基础实验教学与学生创新能力培养
+作者: 孙怡;杨露;
+出版单位: 安徽农业大学学报(社会科学版)
+关键词: 计算机基础;;实验教学模式;;创新能力;;对策
+摘要: 随着高等院校教学改革的深入,计算机基础实验教学的弊端逐渐显现,为了培养学生创新能力以及综合运用所学知识解决实际问题的能力,我们必须重视实验教学、优化实验内容、改进实验教学方式,促进实验教学和理论教学的有机结合。
+专题名称: 教学理论、教学法;总论;
+分类名称: 教学法与教学组织;
+出版日期: 2010-11-15
+
+题名: 计算机网络技术在农业上的应用
+作者: 李亚鹏;
+出版单位: 安徽农学通报
+关键词: 计算机;;信息技术;;农业应用;;综述
+摘要: 该文综述了计算机网络技术在农业生产中的应用情况。
+专题名称: 计算机在农业科学领域的应用;农业物理学;
+分类名称: 电子技术、计算机技术在农业上的应用;
+出版日期: 2008-07-25
+
+题名: 岩土工程的计算机软件综述
+作者: 施灿彬,杨成斌,寇明国,杜娟
+出版单位: 安徽建筑
+关键词: 岩土工程;;软件技术;;GIS;;信息技术
+摘要: 随着世界计算机信息技术的飞速发展,引起了当今社会各行各业的巨大变化,促进了生产力的发展和经济水平的快速提高。作为人类自然科学的一部分,岩土工程的计算机应用水平自然也关系到我们是否能抓住机遇,跟上世界经济发展的大趋势。本文就国内外的各种岩土工程专业软件进行了分类概述,提出面对国内外的竞争,作为国内的岩土工程界更应该奋起直追,大力提高自身软件技术开发能力,加强合作,迎接WTO带来的机遇和挑战。
+专题名称: 土力学、地基基础工程;
+分类名称: 土工试验;
+出版日期: 2002-04-28
+
+题名: 计算机与机电一体化
+作者: 温淑玲
+出版单位: 安徽建筑
+关键词: 计算机;;机电一体化;;自动控制
+摘要: 电子技术的发展产生了计算机，而计算机技术又带动了整个高技术群体飞速发展，引起了传统机械工业的技术革命──机电一体化。
+专题名称: 机械工业总论;
+分类名称: 机电一体化;
+出版日期: 1999-10-15</code></pre></div>
+
+<p>对<code>作者</code>进行限定，检索结果缩小至2条：</p>
+
+<div><pre><code class="language-none">input query: 计算机
+题名:
+作者:梁兴琦
+出版单位:
+年(起始年份 结束年份):
+2 results:
+题名: 并行处理与并行计算机
+作者: 梁兴琦,欧阳一鸣
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 并行处理，并行计算机，操作系统
+摘要: 阐述了并行计算机的结构和原理，分析了并行处理的主要技术，指出了开发并行处理技术和并行计算机的重要性。
+专题名称: 各种电子数字计算机;
+分类名称: 并行计算机;
+出版日期: 1999-03-20
+
+题名: 信息高速公路与 Internet 网络
+作者: 梁兴琦,李万和
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 信息高速公路，Internet网，通讯技术
+摘要: 信息高速公路是人们对计算机技术与通讯技术完美结合的一个美好设想，而Ｉｎｔｅｒｎｅｔ网就是根据这个设想建立起来的实际模型。本文介绍了信息高速公路与Ｉｎｔｅｒｎｅｔ网的发展、现状、应用以及它们之间的关系。
+专题名称: 互联网;
+分类名称: 国际互联网;
+出版日期: 1997-06-20</code></pre></div>
+
+<p>再对年份进行限制，检索结果缩小至1条：</p>
+
+<div><pre><code class="language-none">input query: 计算机
+题名:
+作者:梁兴琦
+出版单位:
+年(起始年份 结束年份):1997 1998
+1 results:
+题名: 信息高速公路与 Internet 网络
+作者: 梁兴琦,李万和
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 信息高速公路，Internet网，通讯技术
+摘要: 信息高速公路是人们对计算机技术与通讯技术完美结合的一个美好设想，而Ｉｎｔｅｒｎｅｔ网就是根据这个设想建立起来的实际模型。本文介绍了信息高速公路与Ｉｎｔｅｒｎｅｔ网的发展、现状、应用以及它们之间的关系。
+专题名称: 互联网;
+分类名称: 国际互联网;
+出版日期: 1997-06-20</code></pre></div>
+
+<h2 id="toc_18">bool检索</h2>
+
+<h3 id="toc_19">搜索<code>计算机 AND 建筑</code></h3>
+
+<div><pre><code class="language-none">input query: 计算机 AND 建筑
+题名:
+作者:
+出版单位:
+年(起始年份 结束年份):
+10 results:
+题名: 谈计算机技术与建筑的关系
+作者: 林晨;
+出版单位: 安徽建筑
+关键词: 建筑画;;计算机辅助设计;;建筑节能
+摘要: 从建筑画的发展谈起,阐述了计算机辅助建筑设计的发展及其在建筑画表达方面的巨大影响和不足之处。并结合全球能源紧缺的现实,论述了计算机技术在建筑能耗模拟和工况运行监测等新领域的应用情况。
+专题名称: 计算机在工业技术领域的应用;其他科学技术在建筑中的应用;
+分类名称: 电子计算机在建筑中的应用;
+出版日期: 2009-09-10
+
+题名: 计算机时代的新建筑美学初探
+作者: 刘斌
+出版单位: 安徽建筑
+关键词: 计算机技术;;新建筑美学;;复杂性科学;;造型
+摘要: 本文沿两条线索讨论了计算机与建筑美学之间的关系,分析了计算机对建筑美学产生的深远影响及对建筑师造型能力的拓展,同时提出了计算机是建筑师创作出优秀作品的必要而非充分条件,强调了坚持明确的建筑师立场的重要性。
+专题名称: 建筑艺术学;
+分类名称: 建筑艺术理论;电子计算机在建筑中的应用;
+出版日期: 2004-04-28
+
+题名: 工程设计的系统功能与框架分析研究(上篇)──国内外建筑钢结构及节点设计软件概述
+作者: 刘晓平,陶小云,胡学刚,邱励俭
+出版单位: 安徽建筑
+关键词: 建筑;;工程设计;;CAD;;系统
+摘要: 工程设计的内涵较广，随着我国大规模经济建设的开展，针对工程设计的图形设计系统应运而生，系统地总结工程设计的特点，有针对性地组建可扩充的、柔性图形设计系统，是本文最重要的出发点。本文借助于计算机辅助设计技术和图形学的研究，讨论了计算机辅助建筑设计和建筑绘图的方法和设计思想，以建筑钢结构设计为例综合分析了钢结构ＣＡＤ系统及节设计的框架结构，该分析对其它工程设计问题有很好的参考价值。
+专题名称: 金属结构;
+分类名称: 钢结构;
+出版日期: 2000-12-30
+
+题名: 斜交网格式地基梁的半解析法及程序设计
+作者: 高荣誉
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 斜交网格基础，共同工作，半解析解，配筋程序
+摘要: 从地基与基础共同工作的力学性能出发，通过对控制微分方程的技术处理，并考虑地基梁的扭转影响，推导出斜交网格基础与地基支承刚度耦合的刚度方程。可求出地基反力和地基梁的任意截面的内力。并在微机上编制了实用计算程序，结合工程给出了算例。
+专题名称: 土力学、地基基础工程;
+分类名称: 地基基础;
+出版日期: 1996-12-20
+
+题名: 一个面向计算机基础CAI的软件研究
+作者: 黄晓梅，张霖
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 计算机辅助教学，个别化教学模式，软件重用技术
+摘要: 给出了一个面向计算机基础教学的软件设计思想及教学流程、系统结构及各功能模块的设计方法。
+专题名称: 机器辅助技术;
+分类名称: 机器辅助设计（CAD）、辅助制图;
+出版日期: 1996-12-20
+
+题名: 一个改进的非线性方程求解的迭代方法
+作者: 王宗木
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 非线性方程，迭代法，收敛
+摘要: 构造了一个改进的非线性方程求解的迭代格式。通过数值计算，该方法比一般迭代法和Ｓｔｅｆｆｅｎｓｅｎ迭代法好，具有收敛速度快、迭代次数少等优点。
+专题名称: 微分方程、积分方程;
+分类名称: 微分方程、积分方程;
+出版日期: 1996-12-20
+
+题名: 建筑院校信息类专业人才培养模式的探讨与研究
+作者: 赵彦强;章曙光;赵彦敏;
+出版单位: 安徽建筑
+关键词: 信息;;智能建筑;;人才培养
+摘要: 文章介绍一种信息类专业新型人才培养模式,信息类专业在建筑院校中,具有它独特的优势和特色,拓宽了信息类专业人才市场的就业面。
+专题名称: 计算机在工业技术领域的应用;其他科学技术在建筑中的应用;
+出版日期: 2006-09-20
+
+题名: 房屋建筑施工管理的现代化问题
+作者: 俞嘉第,王绍裘
+出版单位: 安徽建筑
+摘要: 本文根据多年来在建筑施工中推行现代化管理的经验,强调现代化管理必须结合现实条件。据此提出住宅小区建筑施工的现代化管理模式,并且介绍了琥珀山庄小区的计算机管理信息系统。
+专题名称: 建筑施工;
+分类名称: 施工管理;
+出版日期: 1996-11-15
+
+题名: 基于VR和GIS的城市仿真技术的研究
+作者: 张耀胜;
+出版单位: 安徽建筑
+关键词: VR;;GIS;;城市仿真
+摘要: 文章从城市仿真系统以及城市仿真与虚拟地理环境的关系出发,在VR和GIS技术基础上,对城市仿真关键技术作了详尽的探讨。结合实际应用,重点研究了构建城市仿真系统中实时复杂视景生成和显示技术、快速建模技术、GIS和VR结合的技术。
+专题名称: 计算机在工业技术领域的应用;其他科学技术在建筑中的应用;
+分类名称: 电子计算机在建筑中的应用;
+出版日期: 2006-01-20
+
+题名: 浅议信息技术在建筑行业中的应用
+作者: 段秀珍;
+出版单位: 安徽建筑
+关键词: 信息技术;;建筑业;;应用
+摘要: 在信息时代,信息技术已成为推动人类社会发展的动力,受其影响,建筑行业也正经历一场变革。文章对信息技术在建筑行业中的应用作了初步介绍,以求有所启示。
+专题名称: 计算机在工业技术领域的应用;其他科学技术在建筑中的应用;
+分类名称: 电子计算机在建筑中的应用;
+出版日期: 2006-09-20</code></pre></div>
+
+<h3 id="toc_20">搜索<code>计算机 NOT 建筑</code></h3>
+
+<div><pre><code class="language-none">input query: 计算机 NOT 建筑
+题名:
+作者:
+出版单位:
+年(起始年份 结束年份):
+10 results:
+题名: 并行处理与并行计算机
+作者: 梁兴琦,欧阳一鸣
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 并行处理，并行计算机，操作系统
+摘要: 阐述了并行计算机的结构和原理，分析了并行处理的主要技术，指出了开发并行处理技术和并行计算机的重要性。
+专题名称: 各种电子数字计算机;
+分类名称: 并行计算机;
+出版日期: 1999-03-20
+
+题名: 计算机仿真技术在水资源与环境问题上的应用
+作者: 王美琴
+出版单位: 安徽农业科学
+关键词: 水资源;;环境保护;;计算机仿真
+摘要: 应用计算机仿真方法 ,把水资源与社会、经济、人口和环境放在一个大系统中 ,综合研究复杂系统的定量特性 ,分 3个子模块构造了水资源与环境问题的计算机仿真模型 ,探讨水资源与环境的关系
+专题名称: 计算机仿真;
+分类名称: 计算机仿真;
+出版日期: 2004-08-25
+
+题名: 太阳能计算机
+作者: 陈梦秋
+出版单位: 中外技术情报
+摘要: &lt;正&gt; 近年来,个人计算机的应用日趋广泛。笔记本计算机因便于携带而被商界普遍接受。笔记本计算机必须装配蓄电池,以便在无交流电源场合用机。然而,蓄电池使用时间有限,需经常
+专题名称: 其他计算机;
+分类名称: 其他计算机;
+出版日期: 1996-01-15
+
+题名: 农业院校非计算机专业计算机基础教学改革研究与实践
+作者: 张武;陈鸣;朱诚;
+出版单位: 安徽农业大学学报(社会科学版)
+关键词: 计算机基础;;课程体系;;层次教学;;教学方法
+摘要: 分析了目前农业院校非计算机专业计算机基础课程教学中普遍存在的一些问题,如学生基础差异较大、课程设置与专业结合不紧密、教学方法陈旧、理论课程与实验课相互脱节等,从以下几个方面介绍了安徽农业大学计算机基础教学改革实践:课程体系建设;个性化与差异化教学;改革课程的教学模式及方法;教材建设;改革课程的考核方式;开放教学资源,提高学生自学能力。计算机基础教学改革取得了良好的效果,为培养既精通专业知识,又掌握计算机应用技能的复合型人才奠定了基础。
+专题名称: 总论;
+出版日期: 2011-03-25
+
+题名: 计算机基础实验教学与学生创新能力培养
+作者: 孙怡;杨露;
+出版单位: 安徽农业大学学报(社会科学版)
+关键词: 计算机基础;;实验教学模式;;创新能力;;对策
+摘要: 随着高等院校教学改革的深入,计算机基础实验教学的弊端逐渐显现,为了培养学生创新能力以及综合运用所学知识解决实际问题的能力,我们必须重视实验教学、优化实验内容、改进实验教学方式,促进实验教学和理论教学的有机结合。
+专题名称: 教学理论、教学法;总论;
+分类名称: 教学法与教学组织;
+出版日期: 2010-11-15
+
+题名: 计算机网络技术在农业上的应用
+作者: 李亚鹏;
+出版单位: 安徽农学通报
+关键词: 计算机;;信息技术;;农业应用;;综述
+摘要: 该文综述了计算机网络技术在农业生产中的应用情况。
+专题名称: 计算机在农业科学领域的应用;农业物理学;
+分类名称: 电子技术、计算机技术在农业上的应用;
+出版日期: 2008-07-25
+
+题名: 岩土工程的计算机软件综述
+作者: 施灿彬,杨成斌,寇明国,杜娟
+出版单位: 安徽建筑
+关键词: 岩土工程;;软件技术;;GIS;;信息技术
+摘要: 随着世界计算机信息技术的飞速发展,引起了当今社会各行各业的巨大变化,促进了生产力的发展和经济水平的快速提高。作为人类自然科学的一部分,岩土工程的计算机应用水平自然也关系到我们是否能抓住机遇,跟上世界经济发展的大趋势。本文就国内外的各种岩土工程专业软件进行了分类概述,提出面对国内外的竞争,作为国内的岩土工程界更应该奋起直追,大力提高自身软件技术开发能力,加强合作,迎接WTO带来的机遇和挑战。
+专题名称: 土力学、地基基础工程;
+分类名称: 土工试验;
+出版日期: 2002-04-28
+
+题名: 计算机与机电一体化
+作者: 温淑玲
+出版单位: 安徽建筑
+关键词: 计算机;;机电一体化;;自动控制
+摘要: 电子技术的发展产生了计算机，而计算机技术又带动了整个高技术群体飞速发展，引起了传统机械工业的技术革命──机电一体化。
+专题名称: 机械工业总论;
+分类名称: 机电一体化;
+出版日期: 1999-10-15
+
+题名: 水产品喷雾干燥的计算机模拟
+作者: 张文孝;于功志;肖伟星;姚学勇;
+出版单位: 安徽农学通报
+关键词: 喷雾干燥;;雾化器;;神经网络;;模拟
+摘要: 喷雾干燥是利用雾化器将料液分散为细小的雾滴,并在热干燥介质中迅速蒸发溶剂形成干粉产品的过程。随着经济的发展喷雾干燥技术的应用越来越广泛。但在实际生产试验中,由于干燥过程影响因素很多,喷雾干燥的参数调试和试验必须在实际试验中不断摸索。该文采用具有自适应、自记忆和自学习能力的BP神经网络模型(基于MATLAB环境下)来模拟喷雾干燥的输出情况,并用F lash软件创建喷雾干燥机的动态模型,在VB环境下调用喷雾干燥的动态模型和干燥过程控制模型BP网络模型,从而在计算机上实现了实时监测与控制相关参数对喷雾干燥过程的影响。
+专题名称: 计算机仿真;
+分类名称: 计算机仿真;
+出版日期: 2006-06-25
+
+题名: 高等农业院校计算机基础教学改革探讨
+作者: 杨沛;梁春泉;魏蕾;
+出版单位: 安徽农学通报
+关键词: 高等农业院校;;计算机基础;;教学改革
+摘要: 高等农业院校计算机基础教学是为非计算机专业学生提供计算机应用所必需知识、能力和素质方面的教育,旨在培养学生利用计算机知识和技能解决本专业实际问题,在当代大学生教育中具有特殊地位和作用。本文针对目前计算机基础教育中存在的问题,结合西北农林科技大学近年的改革与实践,以全面提高教学质量,培养学生综合素质为出发点,阐述了新时期新形势下计算机基础教学实施的新思路,并对今后深化计算机基础教育改革提出了新的方向。
+专题名称: 总论;
+出版日期: 2008-08-10</code></pre></div>
+
+<h3 id="toc_21">说明</h3>
+
+<p><code>计算机 AND 建筑</code>的搜索结果大多为建筑与计算机相关，<code>计算机 NOT 建筑</code>则去除了建筑相关条目，搜索效果较为理想。</p>
+
+<h2 id="toc_22">同义词检索</h2>
+
+<h3 id="toc_23">未开启同义词检索功能时，搜索<code>电脑</code></h3>
+
+<div><pre><code class="language-none">input query: 电脑
+题名:
+作者:
+出版单位:
+年(起始年份 结束年份):
+9 results:
+题名: 电脑在提升林业站财务管理水平中的应用
+作者: 吕美昌;徐礼来;
+出版单位: 安徽农学通报
+关键词: 电脑;;林业站;;财务管理;;应用
+摘要: 本文针对新时期林业站财务管理的初级水平与发展现代林业要求极不相适应的状况,着重探索利用电脑提升林业站财务管理水平的问题。实践表明:与传统方式相比,电脑进一步加强了资金和项目管理,确保了资金安全运行,提高了林业站工作效率和服务水平,促进了林业站现代化建设。
+专题名称: 林业;林业经济及概述;
+分类名称: 林业;
+出版日期: 2008-01-10
+
+题名: 电脑三维立体牵引治疗腰椎间盘突出症87例
+作者: 朱国苗,汪泓,张建华
+出版单位: 中医药临床杂志
+关键词: 腰椎间盘突出症;;电脑三维立体牵引
+专题名称: 中医骨伤科;
+分类名称: 现代医学骨伤科疾病;
+出版日期: 2004-08-28
+
+题名: 电脑超声仪治疗中风偏瘫的临床观察及护理
+作者: 王亚瑜
+出版单位: 安徽中医临床杂志
+关键词: 中风偏瘫;;电脑超声仪;;护理
+专题名称: 中医护理学;
+分类名称: 中医护理学;
+出版日期: 2000-12-01
+
+题名: 家庭节电小窍门
+作者: 李忠东;
+出版单位: 安徽科技
+摘要: &lt;正&gt;电脑节电如果需要暂停使用电脑,预计暂停时间小于1小时,可把电脑置于待机;暂停时间大于1小时,最好彻底关机。用完电脑后要正常关机,然后拔下电源插头或关闭电源接线板上的开关,而不要让其处于通电状态,逐步养成彻底断电的习惯。
+专题名称: 家庭管理、家庭生活、家庭服务;
+分类名称: 家庭管理、家庭生活、家庭服务;
+出版日期: 2008-04-20
+
+题名: 电脑模拟:演绎异彩纷呈的“数字化生活”
+作者: 陈建国
+出版单位: 安徽科技
+专题名称: 电气、电子工业;
+分类名称: 电气、电子工业;
+出版日期: 2004-09-10
+
+题名: 企业管理创新浅谈
+作者: 随翠霞
+出版单位: 安徽科技
+摘要: &lt;正&gt; 江泽民总书记指出:“创新是一个民族进步的灵魂,是国家兴旺发达的不竭动力。”对企业而言,应把创新作为企业的发展灵魂。这是建立现代企业制度的关键环节。 1.从以物为中心管理向以人为中心管理的转变 目前企业的信息化及电脑化的管理环境使得传统的以物为中心的管理受到挑战。知识资本化意味着知识以及掌握知识的员工的重要性远远超过资本与土地等一切自然资源,也意味着传统的劳资
+专题名称: 企业经济理论和方法;
+分类名称: 企业经济理论和方法;
+出版日期: 1999-10-15
+
+题名: “虚拟财产”与互联网产业发展的关系及法律保护
+作者: 张学超;
+出版单位: 安徽科技
+摘要: &lt;正&gt;&quot;虚拟财产&quot;是伴随互联网互动增值业务的发展而出现的新事物,是互联网互动增值业务发展不可或缺的部分,是网络虚拟社会和现实世界发生经济联系的客体,以电脑中特定图像符号、信息、数据组成,有满足用户某种需要的使用价值,是可被用户占有、使用、收益和处置的虚拟物。突出体现就是网络游戏的&quot;虚拟财产&quot;,具体表现形式有虚拟货币、游戏装备、积分和帐号等。
+专题名称: 民法;
+分类名称: 民法;
+出版日期: 2008-05-20
+
+题名: 科学探索永无止境
+作者: 吴昭谦
+出版单位: 安徽科技
+摘要: &lt;正&gt; 20世纪百年来的科学技术飞速发展,呈现出一幅幅五彩缤纷、晶光闪耀的万花筒景象,使人眼花缭乱。上个世纪里,没有人能预料有震撼大地的原子弹、氢弹,没有人预料到每秒钟能运算几十亿万次的“电脑”,更没有人能想到真的实现了“嫦娥奔月”。 或许正因为科学技术的神速突破,人们不禁要问:科学的脚步是否已到极限,将由跑步变为踏步！10年前,第25届诺贝尔奖颁奖期间,专门讨论了科学终结问题,一些认为很多学科面临“寿终正
+专题名称: 世界科技事业;
+分类名称: 科学事业史;
+出版日期: 2000-04-15
+
+题名: 徐志华调经两要诀
+作者: 梁文珍
+出版单位: 安徽中医临床杂志
+关键词: 徐志华;;名医经验;;调经
+摘要: 徐志华 ,1 92 5年生 ,安徽省庐江县人 ,安徽中医妇科三大学术流派之一———徐氏妇科传人 ,全国著名中医妇科专家 ,安徽省名中医 ,安徽中医学院教授 ,安徽中医学院第一附属医院妇科主任医师、妇科主任、教研室主任。全国中医妇科专业委员会理事 ,安徽省中医药学会常务理事兼妇科专业委员会主任委员 ,全国高等中医药院校统编第 2版、第 5版教材《中医妇科学》编委 ,全国高等中医药院校教材编委会委员 ,全国中等中医药院校教材《中医妇科学》主审 ,全国函授教材《中医妇科学》主审 ,国家中医药管理局组织编写的《长江医话》副主编 ,全国及安徽省药品评审委员会委员 ,安徽省卫生技术高级职务评审委员会委员 ,安徽省中医医疗事故鉴定委员会委员。国务院政府特殊津贴享受者。其妇科学术经验曾制成《徐志华中医妇科专家电脑诊疗系统》软件 ,向国内外推广 ,深受好评
+专题名称: 医案、医话（临床经验）;
+出版日期: 2003-12-28</code></pre></div>
+
+<h3 id="toc_24">开启同义词检索功能后，搜索<code>电脑</code></h3>
+
+<div><pre><code class="language-none">HYdeMacBook-Pro:IR_Project_jar apple$ java -jar IR_Project.jar -i /Users/apple/Documents/coding/4up/IR/big_project/IR_Project/data/index/ansj -w /Users/apple/Documents/coding/4up/IR/big_project/IR_Project/data/model/word2vec/vectors_s200_w8_iter15.bin 
+loading word2vec model...
+model loaded!
+input query: 电脑
+题名:
+作者:
+出版单位:
+年(起始年份 结束年份):
+0 [main] WARN DICLOG  - not find library.properties in classpath use it by default !
+2 [main] WARN DICLOG  - Init user library  error :library/default.dic because : not find that file !
+2 [main] WARN DICLOG  - Init ambiguity library warning :library/ambiguity.dic because : file not found or failed to read !
+2 [main] WARN DICLOG  - Init synonyms library warning :library/synonyms.dic because : file not found or failed to read !
+373 [main] INFO DICLOG  - init core library ok use time :361
+615 [main] INFO DICLOG  - init ngram ok use time :238
+10 results:
+题名: 并行处理与并行计算机
+作者: 梁兴琦,欧阳一鸣
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 并行处理，并行计算机，操作系统
+摘要: 阐述了并行计算机的结构和原理，分析了并行处理的主要技术，指出了开发并行处理技术和并行计算机的重要性。
+专题名称: 各种电子数字计算机;
+分类名称: 并行计算机;
+出版日期: 1999-03-20
+
+题名: 计算机仿真技术在水资源与环境问题上的应用
+作者: 王美琴
+出版单位: 安徽农业科学
+关键词: 水资源;;环境保护;;计算机仿真
+摘要: 应用计算机仿真方法 ,把水资源与社会、经济、人口和环境放在一个大系统中 ,综合研究复杂系统的定量特性 ,分 3个子模块构造了水资源与环境问题的计算机仿真模型 ,探讨水资源与环境的关系
+专题名称: 计算机仿真;
+分类名称: 计算机仿真;
+出版日期: 2004-08-25
+
+题名: 太阳能计算机
+作者: 陈梦秋
+出版单位: 中外技术情报
+摘要: &lt;正&gt; 近年来,个人计算机的应用日趋广泛。笔记本计算机因便于携带而被商界普遍接受。笔记本计算机必须装配蓄电池,以便在无交流电源场合用机。然而,蓄电池使用时间有限,需经常
+专题名称: 其他计算机;
+分类名称: 其他计算机;
+出版日期: 1996-01-15
+
+题名: 农业院校非计算机专业计算机基础教学改革研究与实践
+作者: 张武;陈鸣;朱诚;
+出版单位: 安徽农业大学学报(社会科学版)
+关键词: 计算机基础;;课程体系;;层次教学;;教学方法
+摘要: 分析了目前农业院校非计算机专业计算机基础课程教学中普遍存在的一些问题,如学生基础差异较大、课程设置与专业结合不紧密、教学方法陈旧、理论课程与实验课相互脱节等,从以下几个方面介绍了安徽农业大学计算机基础教学改革实践:课程体系建设;个性化与差异化教学;改革课程的教学模式及方法;教材建设;改革课程的考核方式;开放教学资源,提高学生自学能力。计算机基础教学改革取得了良好的效果,为培养既精通专业知识,又掌握计算机应用技能的复合型人才奠定了基础。
+专题名称: 总论;
+出版日期: 2011-03-25
+
+题名: 一个面向计算机基础CAI的软件研究
+作者: 黄晓梅，张霖
+出版单位: 安徽建筑工业学院学报(自然科学版)
+关键词: 计算机辅助教学，个别化教学模式，软件重用技术
+摘要: 给出了一个面向计算机基础教学的软件设计思想及教学流程、系统结构及各功能模块的设计方法。
+专题名称: 机器辅助技术;
+分类名称: 机器辅助设计（CAD）、辅助制图;
+出版日期: 1996-12-20
+
+题名: 谈计算机技术与建筑的关系
+作者: 林晨;
+出版单位: 安徽建筑
+关键词: 建筑画;;计算机辅助设计;;建筑节能
+摘要: 从建筑画的发展谈起,阐述了计算机辅助建筑设计的发展及其在建筑画表达方面的巨大影响和不足之处。并结合全球能源紧缺的现实,论述了计算机技术在建筑能耗模拟和工况运行监测等新领域的应用情况。
+专题名称: 计算机在工业技术领域的应用;其他科学技术在建筑中的应用;
+分类名称: 电子计算机在建筑中的应用;
+出版日期: 2009-09-10
+
+题名: 计算机基础实验教学与学生创新能力培养
+作者: 孙怡;杨露;
+出版单位: 安徽农业大学学报(社会科学版)
+关键词: 计算机基础;;实验教学模式;;创新能力;;对策
+摘要: 随着高等院校教学改革的深入,计算机基础实验教学的弊端逐渐显现,为了培养学生创新能力以及综合运用所学知识解决实际问题的能力,我们必须重视实验教学、优化实验内容、改进实验教学方式,促进实验教学和理论教学的有机结合。
+专题名称: 教学理论、教学法;总论;
+分类名称: 教学法与教学组织;
+出版日期: 2010-11-15
+
+题名: 计算机网络技术在农业上的应用
+作者: 李亚鹏;
+出版单位: 安徽农学通报
+关键词: 计算机;;信息技术;;农业应用;;综述
+摘要: 该文综述了计算机网络技术在农业生产中的应用情况。
+专题名称: 计算机在农业科学领域的应用;农业物理学;
+分类名称: 电子技术、计算机技术在农业上的应用;
+出版日期: 2008-07-25
+
+题名: 岩土工程的计算机软件综述
+作者: 施灿彬,杨成斌,寇明国,杜娟
+出版单位: 安徽建筑
+关键词: 岩土工程;;软件技术;;GIS;;信息技术
+摘要: 随着世界计算机信息技术的飞速发展,引起了当今社会各行各业的巨大变化,促进了生产力的发展和经济水平的快速提高。作为人类自然科学的一部分,岩土工程的计算机应用水平自然也关系到我们是否能抓住机遇,跟上世界经济发展的大趋势。本文就国内外的各种岩土工程专业软件进行了分类概述,提出面对国内外的竞争,作为国内的岩土工程界更应该奋起直追,大力提高自身软件技术开发能力,加强合作,迎接WTO带来的机遇和挑战。
+专题名称: 土力学、地基基础工程;
+分类名称: 土工试验;
+出版日期: 2002-04-28
+
+题名: 计算机与机电一体化
+作者: 温淑玲
+出版单位: 安徽建筑
+关键词: 计算机;;机电一体化;;自动控制
+摘要: 电子技术的发展产生了计算机，而计算机技术又带动了整个高技术群体飞速发展，引起了传统机械工业的技术革命──机电一体化。
+专题名称: 机械工业总论;
+分类名称: 机电一体化;
+出版日期: 1999-10-15</code></pre></div>
+
+<h3 id="toc_25">说明</h3>
+
+<p>未开启同义词检索功能时，搜索<code>电脑</code>未搜索出与<code>计算机</code>相关的条目；开启之后，可以搜索出<code>计算机</code>相关条目。</p>
+
+
+
+<script type="text/javascript">
+var _self="undefined"!=typeof window?window:"undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?self:{},Prism=function(){var e=/\blang(?:uage)?-(\w+)\b/i,t=0,n=_self.Prism={util:{encode:function(e){return e instanceof a?new a(e.type,n.util.encode(e.content),e.alias):"Array"===n.util.type(e)?e.map(n.util.encode):e.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/\u00a0/g," ")},type:function(e){return Object.prototype.toString.call(e).match(/\[object (\w+)\]/)[1]},objId:function(e){return e.__id||Object.defineProperty(e,"__id",{value:++t}),e.__id},clone:function(e){var t=n.util.type(e);switch(t){case"Object":var a={};for(var r in e)e.hasOwnProperty(r)&&(a[r]=n.util.clone(e[r]));return a;case"Array":return e.map&&e.map(function(e){return n.util.clone(e)})}return e}},languages:{extend:function(e,t){var a=n.util.clone(n.languages[e]);for(var r in t)a[r]=t[r];return a},insertBefore:function(e,t,a,r){r=r||n.languages;var l=r[e];if(2==arguments.length){a=arguments[1];for(var i in a)a.hasOwnProperty(i)&&(l[i]=a[i]);return l}var o={};for(var s in l)if(l.hasOwnProperty(s)){if(s==t)for(var i in a)a.hasOwnProperty(i)&&(o[i]=a[i]);o[s]=l[s]}return n.languages.DFS(n.languages,function(t,n){n===r[e]&&t!=e&&(this[t]=o)}),r[e]=o},DFS:function(e,t,a,r){r=r||{};for(var l in e)e.hasOwnProperty(l)&&(t.call(e,l,e[l],a||l),"Object"!==n.util.type(e[l])||r[n.util.objId(e[l])]?"Array"!==n.util.type(e[l])||r[n.util.objId(e[l])]||(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,l,r)):(r[n.util.objId(e[l])]=!0,n.languages.DFS(e[l],t,null,r)))}},plugins:{},highlightAll:function(e,t){var a={callback:t,selector:'code[class*="language-"], [class*="language-"] code, code[class*="lang-"], [class*="lang-"] code'};n.hooks.run("before-highlightall",a);for(var r,l=a.elements||document.querySelectorAll(a.selector),i=0;r=l[i++];)n.highlightElement(r,e===!0,a.callback)},highlightElement:function(t,a,r){for(var l,i,o=t;o&&!e.test(o.className);)o=o.parentNode;o&&(l=(o.className.match(e)||[,""])[1],i=n.languages[l]),t.className=t.className.replace(e,"").replace(/\s+/g," ")+" language-"+l,o=t.parentNode,/pre/i.test(o.nodeName)&&(o.className=o.className.replace(e,"").replace(/\s+/g," ")+" language-"+l);var s=t.textContent,u={element:t,language:l,grammar:i,code:s};if(!s||!i)return n.hooks.run("complete",u),void 0;if(n.hooks.run("before-highlight",u),a&&_self.Worker){var c=new Worker(n.filename);c.onmessage=function(e){u.highlightedCode=e.data,n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(u.element),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},c.postMessage(JSON.stringify({language:u.language,code:u.code,immediateClose:!0}))}else u.highlightedCode=n.highlight(u.code,u.grammar,u.language),n.hooks.run("before-insert",u),u.element.innerHTML=u.highlightedCode,r&&r.call(t),n.hooks.run("after-highlight",u),n.hooks.run("complete",u)},highlight:function(e,t,r){var l=n.tokenize(e,t);return a.stringify(n.util.encode(l),r)},tokenize:function(e,t){var a=n.Token,r=[e],l=t.rest;if(l){for(var i in l)t[i]=l[i];delete t.rest}e:for(var i in t)if(t.hasOwnProperty(i)&&t[i]){var o=t[i];o="Array"===n.util.type(o)?o:[o];for(var s=0;s<o.length;++s){var u=o[s],c=u.inside,g=!!u.lookbehind,h=!!u.greedy,f=0,d=u.alias;u=u.pattern||u;for(var p=0;p<r.length;p++){var m=r[p];if(r.length>e.length)break e;if(!(m instanceof a)){u.lastIndex=0;var y=u.exec(m),v=1;if(!y&&h&&p!=r.length-1){var b=r[p+1].matchedStr||r[p+1],k=m+b;if(p<r.length-2&&(k+=r[p+2].matchedStr||r[p+2]),u.lastIndex=0,y=u.exec(k),!y)continue;var w=y.index+(g?y[1].length:0);if(w>=m.length)continue;var _=y.index+y[0].length,P=m.length+b.length;if(v=3,P>=_){if(r[p+1].greedy)continue;v=2,k=k.slice(0,P)}m=k}if(y){g&&(f=y[1].length);var w=y.index+f,y=y[0].slice(f),_=w+y.length,S=m.slice(0,w),O=m.slice(_),j=[p,v];S&&j.push(S);var A=new a(i,c?n.tokenize(y,c):y,d,y,h);j.push(A),O&&j.push(O),Array.prototype.splice.apply(r,j)}}}}}return r},hooks:{all:{},add:function(e,t){var a=n.hooks.all;a[e]=a[e]||[],a[e].push(t)},run:function(e,t){var a=n.hooks.all[e];if(a&&a.length)for(var r,l=0;r=a[l++];)r(t)}}},a=n.Token=function(e,t,n,a,r){this.type=e,this.content=t,this.alias=n,this.matchedStr=a||null,this.greedy=!!r};if(a.stringify=function(e,t,r){if("string"==typeof e)return e;if("Array"===n.util.type(e))return e.map(function(n){return a.stringify(n,t,e)}).join("");var l={type:e.type,content:a.stringify(e.content,t,r),tag:"span",classes:["token",e.type],attributes:{},language:t,parent:r};if("comment"==l.type&&(l.attributes.spellcheck="true"),e.alias){var i="Array"===n.util.type(e.alias)?e.alias:[e.alias];Array.prototype.push.apply(l.classes,i)}n.hooks.run("wrap",l);var o="";for(var s in l.attributes)o+=(o?" ":"")+s+'="'+(l.attributes[s]||"")+'"';return"<"+l.tag+' class="'+l.classes.join(" ")+'" '+o+">"+l.content+"</"+l.tag+">"},!_self.document)return _self.addEventListener?(_self.addEventListener("message",function(e){var t=JSON.parse(e.data),a=t.language,r=t.code,l=t.immediateClose;_self.postMessage(n.highlight(r,n.languages[a],a)),l&&_self.close()},!1),_self.Prism):_self.Prism;var r=document.currentScript||[].slice.call(document.getElementsByTagName("script")).pop();return r&&(n.filename=r.src,document.addEventListener&&!r.hasAttribute("data-manual")&&document.addEventListener("DOMContentLoaded",n.highlightAll)),_self.Prism}();"undefined"!=typeof module&&module.exports&&(module.exports=Prism),"undefined"!=typeof global&&(global.Prism=Prism);
+</script>
+
+
+</body>
+
+</html>

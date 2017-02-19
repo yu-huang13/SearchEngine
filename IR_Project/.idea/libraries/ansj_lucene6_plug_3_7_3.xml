@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="ansj_lucene6_plug-3.7.3">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/ansj-3.7.3/ansj_lucene6_plug-3.7.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

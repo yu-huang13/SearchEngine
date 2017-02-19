@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: /Users/apple/Documents/coding/4up/IR/big_project/IR_Projec
+ t/src
+Main-Class: Main
+
